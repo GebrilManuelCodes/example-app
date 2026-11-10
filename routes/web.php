@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EstudanteController;
 use App\Http\Controllers\InicioController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/teste', [InicioController::class, 'index']);
+Route::get('/estudante', [EstudanteController::class, 'index']);
